@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="impartirea_careului_nou" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/impartirea_careului_nou" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/impartirea_careului_nou" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="C:/Users/Irina/Documents/Code Blocks, fisiere/impartirea_careului_nou/include" />
+		</Compiler>
+		<Unit filename="41.txt" />
+		<Unit filename="42.txt" />
+		<Unit filename="43.txt" />
+		<Unit filename="44.txt" />
+		<Unit filename="61.txt" />
+		<Unit filename="62.txt" />
+		<Unit filename="63.txt" />
+		<Unit filename="64.txt" />
+		<Unit filename="81.txt" />
+		<Unit filename="82.txt" />
+		<Unit filename="83.txt" />
+		<Unit filename="84.txt" />
+		<Unit filename="afisare_mat.out" />
+		<Unit filename="main.cpp" />
+		<Unit filename="tabla_4.h" />
+		<Unit filename="tabla_6.h" />
+		<Unit filename="tabla_8.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

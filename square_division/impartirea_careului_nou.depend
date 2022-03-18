@@ -1,0 +1,55 @@
+# depslib dependency file v1.0
+1610147031 source:c:\users\irina\documents\code blocks, fisiere\impartirea_careului_nou\main.cpp
+	<iostream>
+	"sl.h"
+	<winbgim.h>
+	<stdlib.h>
+
+1609613138 c:\users\irina\documents\code blocks, fisiere\impartirea_careului_nou\tabla_8.h
+
+1609614573 c:\users\irina\documents\code blocks, fisiere\impartirea_careului_nou\tabla_4.h
+
+1609616324 c:\users\irina\documents\code blocks, fisiere\impartirea_careului_nou\tabla_6.h
+
+1552945605 c:\users\irina\documents\code blocks, fisiere\impartirea_careului_nou\sl.h
+
+1552945605 c:\users\irina\documents\code blocks, fisiere\impartirea_careului_nou\include\sl.h
+
+1610150280 source:c:\users\irina\documents\cb\impartirea_careului_nou\main.cpp
+	<iostream>
+	<windows.h>
+	<winbgim.h>
+	<stdlib.h>
+
+1610808483 source:c:\users\irina\documents\code blocks\impartirea_careului_nou\main.cpp
+	<iostream>
+	<fstream>
+	<windows.h>
+	<mmsystem.h>
+	<winbgim.h>
+	<stdlib.h>
+
+1610808483 source:c:\users\irina\documents\code blocks\impartirea-careului\main.cpp
+	<iostream>
+	<fstream>
+	<windows.h>
+	<mmsystem.h>
+	<winbgim.h>
+	<stdlib.h>
+
+1610808483 source:c:\users\irina\desktop\1a1_nastasaraluca-rebegeairina_impartirea-careului\impartirea-careului\main.cpp
+	<iostream>
+	<fstream>
+	<windows.h>
+	<mmsystem.h>
+	<winbgim.h>
+	<stdlib.h>
+
+1647602571 source:c:\users\irina\desktop\1a1_nastasaraluca-rebegeairina_impartirea-careului\1a1_nastasaraluca-rebegeairina_impartirea-careului\impartirea-careului\main.cpp
+	<iostream>
+	<fstream>
+	<windows.h>
+	<mmsystem.h>
+	<winbgim.h>
+	<stdlib.h>
+
