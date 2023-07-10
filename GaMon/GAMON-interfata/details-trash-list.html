@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Details - trash list</title>
+
+    <script src="https://use.fontawesome.com/42c197b2be.js"></script>
+    <script src="https://kit.fontawesome.com/539a88a107.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/details-trash-list-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+
+<body>
+    <nav class="zone sticky">
+        <div class="top-nav">
+            <a class="style-logo" href="#">GaMon</a>
+            <div class="push">
+                <a href="report-dump.html"><i class="fa fa-map-marker" aria-hidden="true"></i>
+
+                    Report dump</a>
+                <a href="#" class="profile">
+                    <div class="picture">
+                        <img src="images/cat.jpg" alt="Profile picture">
+                    </div>
+                    <div id="displayed-name" class="name"></div>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+    <div class="main-container">
+        <div id="left-nav">
+
+            <div class="sidebar">
+
+                <a href="dashboard.html"><i class="fa fa-eye" aria-hidden="true"></i>Dashboard</a>
+                <a id="private-button" href="dump-list-private-requests.html"><i class="fa fa-list-ul" aria-hidden="true"></i>Dump list</a>
+                <a href="collection-points-list.html"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Collection
+                    points</a>
+                <a href="events-list.html"><i class="fa fa-calendar" aria-hidden="true"></i>
+                    Events</a>
+                <a class="place-bottom" href="login.html"><i class="fa fa-sign-out" aria-hidden="true"></i>
+                    Sign out</a>
+            </div>
+        </div>
+
+        <div id="centered" class="center-container">
+            <div id="garbage-location" class="location">
+                <i id="icon" class="fa fa-map-marker street-name"></i>
+            </div>
+            <div class="images-and-details">
+                <div class="images">
+                    <div class="image-1">
+                        <div id="first-image" class="img">
+                        </div>
+                    </div>
+                    <div class="small-images">
+                        <div  class="image-2">
+                            <div id="second-image" class="img">
+                            </div>
+                        </div>
+                        <div class="image-2">
+                            <div id="third-image" class="img">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="details">
+                    <div class="size-and-status">
+                        <div class="small-box">
+                            <h2 class="titles">Updated by:</h2>
+                            <div class="img-user">
+                                <img src="images/user.jpg">
+                            </div>
+                            <div id="updated-by">
+ 
+                            </div>
+                        </div>
+                        <div class="small-box">
+
+                            <h2 class="titles">Size</h2>
+                            <div id="garbage-size">
+                                <i class="fa-solid fa-truck icon"></i>
+                            </div>
+                            <h2 class="titles">Status</h2>
+                            <div id="garbage-status">
+                            <i class="fa-solid fa-xmark icon"></i>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <h2 class="titles">Type of waste</h2>
+                        <div class="three-boxes">
+                            <div id="recyclable" class="recycle">
+                                <h4 class="big-text">Recyclables</h4>
+                            </div>
+                            <div id="household" class="household">
+                                <h4 class="big-text">Household</h4>
+                            </div>
+                            <div id="other" class="other">
+                                <h4 class="big-text">Other</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="javascript/garbageSingleTrash.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create collection point</title>
+
+    <script src="https://use.fontawesome.com/42c197b2be.js"></script>
+    <script src="https://kit.fontawesome.com/539a88a107.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/create-colletion-point-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+
+<body>
+    <nav class="zone sticky">
+        <div class="top-nav">
+            <a class="style-logo" href="#">GaMon</a>
+            <div class="push">
+                <a href="report-dump.html"><i class="fa fa-map-marker" aria-hidden="true"></i>
+
+                    Report dump</a>
+                <a href="#" class="profile">
+                    <div class="picture">
+                        <img src="images/cat.jpg" alt="Profile picture">
+                    </div>
+                    <div id="displayed-name" class="name"></div>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+    <div class="main-container">
+        <div id="left-nav">
+
+            <div class="sidebar">
+
+                <a href="dashboard.html"><i class="fa fa-eye" aria-hidden="true"></i>Dashboard</a>
+                <a id="private-button" href="dump-list-private-requests.html"><i class="fa fa-list-ul" aria-hidden="true"></i>Dump list</a>
+                <a href="collection-points-list.html"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Collection
+                    points</a>
+                <a href="events-list.html"><i class="fa fa-calendar" aria-hidden="true"></i>
+                    Events</a>
+                <a class="place-bottom" href="login.html"><i class="fa fa-sign-out" aria-hidden="true"></i>
+                    Sign out</a>
+            </div>
+        </div>
+
+        <div id="centered" class="center-container">
+            <div class="details">
+                <div class="center-info">
+                    <div class="center-name">
+                        <h2 class="box-text">Size</h2>
+                        <div class="sizetypes">
+                            <label class="type-bin"><input type="radio" name="radio" />Bin</label>
+                            <label class="type-center"><input type="radio" name="radio" />Center</label>
+                        </div>
+                        <h2 class="box-text for-input">Center Name</h2>
+                        <input id="name" type="text" placeholder="Enter name center" autocomplete="off" name="uname">
+                    </div>
+                    <div class="contact">
+                        <h2 class="box-text for-input">Contact</h2>
+                        <p class="contact-text">Email address</p>
+                        <input id="email" type="text" placeholder="Enter email addres" autocomplete="off" name="uname">
+                        <p class="contact-text">Phone number</p>
+                        <input id="phone" type="text" placeholder="Enter phone number" autocomplete="off" name="uname">
+                    </div>
+                </div>
+                <div class="location">
+                    <h2 class="box-text1">Location</h2>
+                    <input id="location" type="text" placeholder="Enter the location of center" autocomplete="off" name="uname">
+                </div>
+            </div>
+            <div class="type">
+                <h2 class="box-text">Collection Point Type</h2>
+                <div id="recyclable" class="recycle">
+                    <h5 id="recyclable-title" class="titles">Recyclables</h5>
+                    <label class="type-recycle"><input type="checkbox" name="checkbox" />Paper</label>
+                    <label class="type-recycle"><input type="checkbox" name="checkbox" />Glass</label>
+                    <label class="type-recycle"><input type="checkbox" name="checkbox" />Metal</label>
+                    <label class="type-recycle"><input type="checkbox" name="checkbox" />Plastic</label>
+                    <label class="type-recycle"><input type="checkbox" name="checkbox" />Cardboard</label>
+                    <label class="type-recycle"><input type="checkbox" name="checkbox" />Biodegradable</label>
+                </div>
+                <div id="household" class="household">
+                    <h5 id="household-title" class="titles">Household</h5>
+                    <label class="type-recycle"><input type="checkbox" name="checkbox" />Electronic</label>
+                    <label class="type-recycle"><input type="checkbox" name="checkbox" />Furniture</label>
+                    <label class="type-recycle"><input type="checkbox" name="checkbox" />Carpets</label>
+                    <label class="type-recycle"><input type="checkbox" name="checkbox" />Mirror</label>
+                </div>
+                <div id="other" class="other">
+                    <h5 id="other-title" class="titles">Other</h5>
+                    <label class="type-recycle"><input type="checkbox" name="checkbox" />Clothes</label>
+                    <label class="type-recycle"><input type="checkbox" name="checkbox" />Tires</label>
+                    <label class="type-recycle"><input type="checkbox" name="checkbox" />Wooden</label>
+                    <label class="type-recycle"><input type="checkbox" name="checkbox" />Construction materials</label>
+                </div>
+
+            </div>
+            <div class="timetable">
+                <h2 class="box-text">Timetable</h2>
+                <table>
+
+                    <tr>
+                        <th>Day</th>
+                        <th>Open</th>
+                        <th>Close</th>
+                    </tr>
+
+                    <tr id="mon">
+                        <td class="weekday">Mon</td>
+                        <td><input class="open" type="time" name="time"></td>
+                        <td><input class="close" type="time" name="time"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="weekday">Tue</td>
+                        <td><input class="open" type="time" name="time"></td>
+                        <td><input class="close" type="time" name="time"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="weekday">Wed</td>
+                        <td><input class="open" type="time" name="time"></td>
+                        <td><input class="close" type="time" name="time"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="weekday">Thu</td>
+                        <td><input class="open" type="time" name="time"></td>
+                        <td><input class="close" type="time" name="time"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="weekday">Fri</td>
+                        <td><input class="open" type="time" name="time"></td>
+                        <td><input class="close" type="time" name="time"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="weekday">Sat</td>
+                        <td><input class="open" type="time" name="time"></td>
+                        <td><input class="close" type="time" name="time"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="weekday">Sun</td>
+                        <td><input class="open" type="time" name="time"></td>
+                        <td><input class="close" type="time" name="time"></td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="submit-button">
+                <div>
+                    <button id="create-button" class="button">Submit</button>
+                </div>
+            </div>
+
+            <script src="javascript/createCollectionPointController.js"></script>
+</body>
+
+</html>

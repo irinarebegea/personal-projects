@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edit-My Account</title>
+
+    <script src="https://use.fontawesome.com/42c197b2be.js"></script>
+    <script src="https://kit.fontawesome.com/539a88a107.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/edit-my-account-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+
+<body>
+    <nav class="zone sticky">
+        <div class="top-nav">
+            <a class="style-logo" href="#">GaMon</a>
+            <div class="push">
+                <a href="report-dump.html"><i class="fa fa-map-marker" aria-hidden="true"></i>
+
+                    Report dump</a>
+                <a href="#" class="profile">
+                    <div class="picture">
+                        <img src="images/cat.jpg" alt="Profile picture">
+                    </div>
+                    <div class="name">Name</div>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+    <div class="main-container">
+        <div id="left-nav">
+
+            <div class="sidebar">
+
+                <a href="dashboard.html"><i class="fa fa-eye" aria-hidden="true"></i>Dashboard</a>
+                <a id="private-button" href="dump-list-private-requests.html"><i class="fa fa-list-ul" aria-hidden="true"></i>Dump list</a>
+                <a href="collection-points-list.html"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Collection points</a>
+                <a href="events-list.html"><i class="fa fa-calendar" aria-hidden="true"></i>
+                    Events</a>
+                <a class="place-bottom" href="login.html"><i class="fa fa-sign-out" aria-hidden="true"></i>
+                    Sign out</a>
+            </div>
+        </div>
+
+        <div id="centered" class="center-container">
+            <div class="title"><h2>Your avatar</h2></div>
+            <div class="your-avatar">
+                <h4 class="small-title">PROFILE IMAGE</h4>
+                <div class="select-file"> 
+                    <h6>Select file</h6>
+                </div>
+            </div>
+            <div class="title"><h2>Main information</h2></div>
+            <div class="main-information">
+                <!-- prenume, nume, email -->
+                <h4 class="small-title for-input"> FIRST NAME</h4>
+                <input type="text" placeholder="Enter your first name" autocomplete="off" name="uname">
+                <h4 class="small-title for-input">LAST NAME</h4>
+                <input type="text" placeholder="Enter your last name" autocomplete="off" name="uname">
+                <h4 class="small-title for-input">EMAIL ADDRESS</h4>
+                <input type="text" placeholder="Enter your last name" autocomplete="off" name="uname">
+            </div>
+            <div class="title"><h2>Change password</h2></div>
+            <div class="change-password">
+                <!-- old password, new password, re-enter new -->
+                <h4 class="small-title for-input"> OLD PASSWORD</h4>
+                <input type="password" placeholder="Enter your old password" autocomplete="off" name="psw">
+                <h4 class="small-title for-input">NEW PASSWORD</h4>
+                <input type="password" placeholder="Enter your new password" autocomplete="off" name="psw">
+                <h4 class="small-title for-input">RE-ENTER NEW PASSWORD</h4>
+                <input type="password" placeholder="Re-enter your new password" autocomplete="off" name="psw">
+            </div>
+            <div class="edit-buttons">
+                <div>
+                    <button class="update-button button">Update</button>
+                </div>
+                <div>
+                    <button class="delete-button button">Delete</button>
+                </div>
+            </div>
+        </div>
+            
+
+
+</body>
+
+</html>

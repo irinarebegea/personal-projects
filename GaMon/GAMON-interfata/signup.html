@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="styles/signup-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <title>Sign up</title>
+</head>
+
+<body>
+    <form>
+        <div class="main-container">
+            <div class="logo">
+                <h1>GaMon</h1>
+            </div>
+            <div class="info">
+                <div class="choose-login">
+                    <button type="button" class="loginbtn"><a href="login.html">Login</a></button>
+                    <button type="button" class="signupbtn">Sign up</button>
+                </div>
+                <div class="container">
+                    <div class="names">
+                        <div class="firstnames">
+                            <label>First name</label>
+                            <input id="firstname" type="text" placeholder="First name" autocomplete="off" name="firstname" required />
+                        </div>
+                        <div class="lastnames">
+                            <label>Last name</label>
+                            <input id="lastname" type="text" placeholder="Last name" autocomplete="off" name="lastname" required />
+                        </div>
+
+                    </div>
+
+                    <label>Email address</label>
+                    <input id="email" type="email" placeholder="Email address" autocomplete="off" name="email" required />
+
+
+                    <label>Password</label>
+                    <input id="password" type="password" placeholder="Enter Password" autocomplete="off" name="password" required />
+
+                    <label>Account type</label>
+                    <div class="acctypes">
+                        <label class="type-citizen"><input type="radio" name="radiotype" />Citizen</label>
+                        <label class="type-authorized"><input type="radio" name="radiotype" />Authorized person</label>
+                    </div>
+                    <label>Authorization code</label>
+                    <input id="authcode" type="text" placeholder="Authorization code" autocomplete="off" name="autcode">
+                    <!-- <a href="dashboard.html"> -->
+                    <button id="submit-button" type="submit" class="submitbtn">submit</button>
+                    <!-- </a> -->
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="javascript/registerController.js"></script>
+</body>
+
+</html>

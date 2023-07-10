@@ -1,0 +1,683 @@
+body {
+    margin: auto 0;
+    font-family: Poppins, sans-serif;
+    background-color: #E8E9EB;
+}
+
+
+/* Top navigation */
+.top-nav {
+    margin: 0;
+    overflow: hidden;
+    background-color: #7AE582;
+    width: 100%;
+}
+
+.top-nav a {
+    font-size: 1.3em;
+    float: left;
+    text-decoration: none;
+    padding: 7px 20px;
+    color: #fafafa;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.top-nav .style-logo {
+    padding: 3px 0 0 2%;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    font-weight: bold;
+}
+
+.sticky {
+    top: 0;
+    width: 100%;
+}
+
+.push {
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    padding-right: 2%;
+}
+
+.push a:hover {
+    background-color: rgb(87, 190, 94);
+}
+
+/* Profile image */
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.name {
+    margin-top: auto;
+}
+
+.profile .picture {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 2%;
+    margin-right: 10%;
+
+}
+
+.profile .picture>img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*-------------------------------------------------------------*/
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+
+/* Left nav */
+#left-nav {
+    width: 18%;
+    height: 120vh;
+    transition: 0.5s;
+}
+
+
+.sidebar {
+    height: 100%;
+    background-color: #01110A;
+    transition: 0.5s;
+    padding-top: 3%;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    text-transform: uppercase full-width;
+    font-size: 1em;
+    color: #E8E9EB;
+    display: flex;
+    flex-direction: row;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #E8E9EB;
+    background-color: #252525;
+}
+
+.selected {
+    color: #E8E9EB;
+    background-color: #252525;
+}
+
+#mySidenav {
+    position: absolute;
+    font-size: 1.5em;
+    padding-top: 2px;
+    cursor: pointer;
+    background-color: #7AE582;
+    color: #fafafa;
+    border: none;
+    margin-left: 8%;
+}
+
+.place-bottom {
+    margin-top: 60vh;
+}
+
+
+.fa-eye,
+.fa-list-ul,
+.fa-thumb-tack,
+.fa-calendar,
+.fa-sign-out {
+    margin-right: 3%;
+    display: flex;
+    align-items: center;
+
+}
+
+/*-------------------------------------------------------------*/
+
+#centered {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+}
+
+.center-container {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.name-bar {
+    width: 98%;
+    height: 5%;
+    background-color: #01110A;
+    color: #E8E9EB;
+    text-align: center;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+
+#name {
+    margin-top: auto;
+    text-transform: uppercase;
+}
+
+.infos {
+    width: 98%;
+    height: 95%;
+    display: flex;
+    flex-direction: row;
+}
+
+.image-and-level {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.profile-image {
+    width: 60%;
+    height: 0;
+    padding-bottom: 60%;
+}
+
+#img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.level {
+    width: 80%;
+    height: 27%;
+    margin-top: 10%;
+    color: #01110A;
+    text-align: justify;
+    padding: 0% 2% 0% 2%;
+    border-style: solid;
+    border-width: medium;
+    border-color: #E8E9EB;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+    border-radius: 3%;
+}
+
+.info {
+    width: 100%;
+    flex-direction: column;
+    border-style: solid;
+    border-width: medium;
+    border-color: #E8E9EB;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+    border-radius: 3%;
+}
+
+#level {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#number-level {
+    color: #01110A;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.points {
+    color: #7AE582;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.personal-infos {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+}
+
+.contacts {
+    color: #01110A;
+    height: 15%;
+    width: 80%;
+    align-self: center;
+    padding: 0% 2% 0% 2%;
+    border-style: solid;
+    border-width: medium;
+    border-color: #E8E9EB;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+    border-radius: 3%;
+}
+
+#contacts {
+    margin-BOTTOM: 10px;
+    letter-spacing: 2px;
+}
+
+#adress {
+    margin-TOP: 0;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 10%;
+}
+
+.statistics {
+    height: 5%;
+    margin-top: 10%;
+    width: 100%;
+    padding-left: 10%;
+    align-self: center;
+}
+
+#statistics {
+    color: #01110A;
+    margin-top: 0;
+    letter-spacing: 0.5px;
+}
+
+.small-box {
+    margin-top: 0;
+    width: 30%;
+    /* daca vrei sa modifici latura patratului, schimbi asta si padding-bottom */
+    height: 0;
+    padding-bottom: 20%;
+    margin-top: 5%;
+}
+
+.small-box-numbers {
+    color: #7AE582;
+    font-weight: bold;
+    font-size: 300%;
+    text-align: center;
+    margin-top: 0;
+    margin-BOTTOM: 0;
+}
+
+.small-box-text {
+    color: #01110A;
+    font-weight: bold;
+    font-size: 100%;
+    text-align: center;
+    margin-TOP: 0;
+}
+
+.account-type {
+    color: #01110A;
+    height: 27%;
+    margin-top: 10%;
+    width: 80%;
+    align-self: center;
+    padding: 0% 2% 0% 2%;
+    border-style: solid;
+    border-width: medium;
+    border-color: #E8E9EB;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+    border-radius: 3%;
+}
+
+.account-title {
+    margin-bottom: 0;
+    letter-spacing: 2px;
+}
+
+.account-text {
+    color: #01110A;
+    margin-TOP: 0;
+}
+
+.edit-details {
+    width: 20%;
+    height: 5%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button {
+    font-family: Poppins;
+    border: none;
+    border-radius: 10px;
+    background-color: #7AE582;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.3s;
+    font-size: 1em;
+    cursor: pointer;
+    width: 60%;
+    height: 90%;
+    letter-spacing: 1.5px;
+    justify-content: flex-end;
+
+}
+
+
+.button-edit {
+    text-decoration: none;
+    color: white;
+}
+
+.button:hover {
+    background-color: rgb(87, 190, 94);
+}
+
+/* Small screens */
+
+@media only screen and (max-width: 1170px) {
+
+    #left-nav {
+        font-size: 0.7em;
+    }
+
+    .top-nav {
+        font-size: 0.7em;
+    }
+
+    .profile .picture {
+        display: none;
+    }
+
+    .stats-numbers {
+        font-size: 0.7em;
+    }
+
+    .hide-when-small {
+        display: none;
+    }
+
+
+    #name {
+        font-size: 1.5em;
+        letter-spacing: normal;
+        word-spacing: normal;
+        padding-top: 1%;
+    }
+
+    #contacts,
+    .account-title,
+    #level,
+    .points,
+    p,
+    #adress {
+        font-size: 1em;
+    }
+
+    .small-box-numbers {
+        font-size: 2em;
+    }
+
+    #number-level {
+        font-size: 1.5em;
+    }
+
+    #statistics {
+        font-size: 1em;
+    }
+
+}
+
+@media only screen and (max-width: 920px) {
+    .personal-infos {
+        width: 45%;
+    }
+
+    .edit-details {
+        width: 15%;
+    }
+
+}
+
+@media only screen and (max-width: 880px) {
+
+    .profile .picture {
+        display: none;
+    }
+
+    .top-nav {
+        font-size: 0.5em;
+        padding-top: 1px;
+    }
+
+    .top-nav .style-logo {
+        padding-top: 3px;
+    }
+
+    #mySidenav {
+        padding-top: 5px;
+        margin-left: 2%;
+    }
+
+    #left-nav {
+        display: none;
+    }
+
+    #centered {
+        width: 100%;
+    }
+
+    .boxes {
+        height: 20%;
+    }
+
+    #contacts,
+    .account-title,
+    #level,
+    .points,
+    p,
+    #adress {
+        font-size: 1em;
+    }
+
+    .small-box-numbers {
+        font-size: 1.5em;
+    }
+
+    #number-level {
+        font-size: 1em;
+    }
+
+    .account-type {
+        height: 40%;
+    }
+
+    .name-bar {
+        height: 7%;
+    }
+
+    .name-bar #name {
+        font-size: 1.3em;
+    }
+
+    .level {
+        height: 50%;
+    }
+
+    .contacts {
+        height: 20%;
+    }
+
+    .edit-details {
+        font-size: 0.7em;
+        height: 7%;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 760px) {
+
+    .edit-details {
+        width: 15%;
+    }
+
+    .personal-infos {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+
+    .edit-details {
+        width: 13%;
+    }
+
+    .personal-infos {
+        width: 47%;
+    }
+
+    #statistics {
+        margin-bottom: 2%;
+    }
+}
+
+
+@media only screen and (max-width: 640px) {
+
+    .edit-details {
+        width: 11%;
+    }
+
+    .personal-infos {
+        width: 49%;
+    }
+}
+
+
+@media only screen and (max-width: 615px) {
+
+    .edit-details {
+        align-self: center;
+        height: 10%;
+        font-size: 0.7em;
+        width: 95%;
+        justify-content: center;
+        margin-top: 7%;
+    }
+
+    #contacts,
+    .account-title,
+    #level,
+    .points,
+    p,
+    #adress,
+    #number-level,
+    .small-box-text {
+        font-size: 0.7em;
+    }
+
+    .small-box-numbers {
+        font-size: 1em;
+    }
+
+    .account-type {
+        height: 40%;
+    }
+
+    .name-bar {
+        height: 5%;
+    }
+
+    .name-bar #name {
+        font-size: 1em;
+    }
+
+    .contacts {
+        height: 30%;
+    }
+
+    .infos {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 94%;
+    }
+
+    .image-and-level,
+    .personal-infos {
+        width: 95%;
+    }
+
+    .image-and-level {
+        height: 48%;
+        padding-top: 2%;
+    }
+
+    .personal-infos {
+        height: 40%;
+    }
+
+    .profile-image {
+        width: 40%;
+        padding-bottom: 40%;
+    }
+
+    #statistics {
+        text-align: center;
+        padding-left: 0;
+        margin-left: 0;
+        font-size: 0.7em;
+    }
+
+    .statistics {
+        padding-left: 0;
+    }
+
+    .small-box {
+        padding-bottom: 1%;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 435px) {
+
+    .boxes,
+    .account-type {
+        margin-bottom: 7%;
+    }
+
+    .edit-details {
+        height: 5%;
+    }
+
+    .image-and-level {
+        height: 41%;
+    }
+
+    .personal-infos {
+        height: 45%;
+    }
+
+    .small-box {
+        padding: 0;
+        margin-top: 2%;
+    }
+
+}

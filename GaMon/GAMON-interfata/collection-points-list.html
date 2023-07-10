@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Collection points</title>
+
+    <script src="https://use.fontawesome.com/42c197b2be.js"></script>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/collection-points-list.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="zone sticky">
+        <div class="top-nav">
+            <a class="style-logo" href="#">GaMon</a>
+            <div class="push">
+                <a href="report-dump.html"><i class="fa fa-map-marker" aria-hidden="true"></i>
+
+                    Report dump</a>
+                <a href="#" class="profile">
+                    <div class="picture">
+                        <img src="images/cat.jpg">
+                    </div>
+                    <div id="displayed-name" class="name"></div>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+    <div class="main-container">
+        <div id="left-nav">
+
+            <div class="sidebar">
+
+                <a href="dashboard.html"><i class="fa fa-eye" aria-hidden="true"></i>Dashboard</a>
+                <a id="private-button" href="dump-list-private-requests.html"><i class="fa fa-list-ul" aria-hidden="true"></i>Dump list</a>
+                <a class="selected" href="collection-points-list.html"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Collection points</a>
+                <a href="events-list.html"><i class="fa fa-calendar" aria-hidden="true"></i>
+                    Events</a>
+                <a class="place-bottom" href="login.html"><i class="fa fa-sign-out" aria-hidden="true"></i>
+                    Sign out</a>
+            </div>
+        </div>
+
+        <div id="centered" class="center-container">
+            <div class="list-buttons">
+                <button id="create-button" type="button"><a href="create-colletion-point.html">Create center</a></button>
+                <button id="delete-button" type="button">Delete center</button>
+            </div>
+            <div class="view-type">
+                <div class="list">
+                    <a href="collection-points-list.html">List</a>
+                </div>
+                <!-- <div class="map">
+                    <a href="collection-points-map.html">Map</a>
+                </div> -->
+            </div>
+            <table id="coll-points-list-table">
+
+                <tr>
+                    <th>Check
+                    </th>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Size</th>
+                    <th>Location</th>
+                    <th>Show details</th>
+                </tr>
+
+            </table>
+        </div>
+
+
+    </div>
+    <script src="javascript/collectionPointsBundle.js"></script>
+    <script src="javascript/collectionPointsBundleModel.js"></script>
+
+</body>
+
+</html>

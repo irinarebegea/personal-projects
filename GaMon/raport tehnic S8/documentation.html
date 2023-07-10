@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>GaMon raport tehnic</title>
+    <link rel="stylesheet" type="text/css" href="documentation-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+
+<body>
+    <article>
+        <header>
+            <h1>GAMON RAPORT TEHNIC</h1>
+            <div role="contentinfo" class="align">
+                <h4 class="move">Artene Raluca-Ioana</h4>
+                <h4 class="move-second">Rebegea Irina</h4>
+                
+            </div>
+            <h4 class="align">Grupa 2A1, FII</h4>  
+        </header>
+        <section class="cuprins">
+            <h2>Cuprins</h2>
+            <ol>
+            <li><a href="#introducere">Introducere</a></li>
+            <li><a href="#descrie-regenerala">Descriere generală</a></li>
+            <li><a href="#caracteristici">Caracteristicile aplicației</a></li>
+            <li><a href="#cerinte-nefunctionale">Alte cerințe nefuncționale</a></li>
+            <li><a href="#resurse">Resurse</a></li>
+            </ol>
+        </section>
+        <section>
+            <h2 id="introducere">Introducere</h2>
+            <h3>Descriere</h3>
+            <p>Cu toții suntem conștienți că reciclarea este importantă, deoarece reduce nevoia de exploatare a
+                Pământului
+                în vederea obținerii materiilor prime.
+                Însă, de multe ori, nu știm cum și unde să aruncăm în mod corect deșeurile.
+                Acest proiect vizează implementarea unei aplicații web care monitorizează aruncarea necorespunzătoare a
+                deșeurilor
+                și încurajează cetățenii să participe dinamic și constant la activități de salubrizare.
+            </p>
+            <h3>Scopul produsului</h3>
+            <p>Aplicația GaMon își propune doi pași prin care să contribuie la curățarea planetei.
+                Primul pas este alcătuit din câteva etape simple, cum ar fi localizarea de către cetățeni a celor mai
+                apropiate centre de colectare selectivă,
+                raportarea zonelor în care există deșeuri aruncate incorect și solicitarea la domiciliu a unui tomberon.
+            </p>
+            <p>Al doilea pas, curățarea propriu-zisă, constă în implicarea în evenimentele organizate de ONG-uri de
+                mediu și de administrația orașului. </p>
+            <p>Aplicația are o caracteristică deosebită - se folosește de un sistem de tip clasament, încercând astfel
+                să sensibilizeze utilizatorii
+                și să îi încurajeze să își crească nivelul de implicare. </p>
+        </section>
+        <section>
+            <h2 id="descriere-generala">Descriere generală</h2>
+            <h3>Funcționalitățile produsului</h3>
+            <ol>
+                <li><p>Crearea unui cont și autentificarea (C, PA)</p></li>
+                <li><p>Contul meu - vizualizarea și editarea detaliilor personale (C, PA)</p></li>
+                <li><p>Pins - localizarea pe hartă a zonelor în care există deșeuri (C, PA)</p></li>
+                <li><p>Vizualizarea statisticilor (C, PA)</p></li>
+                <li><p>Exportarea statisticilor</p></li>
+                <li><p>Vizualizarea și modificarea listei de raportări</p></li>
+                <li><p>Raportarea deșeurilor pe baza unor filtre (C, PA)</p></li>
+                <li><p>Vizualizarea centrelor de colectare selectivă (C, PA)</p></li>
+                <li><p>Adăugarea centrelor de colectare selectivă</p></li>
+                <li><p>Vizualizarea evenimentelor (C, PA)</p></li>
+                <li><p>Crearea evenimentelor</p></li>
+                <li><p>Deconectarea de la aplicație (C, PA)</p></li>
+            </ol>
+            <h3>Actori și roluri</h3>
+
+            <p>Actor: <strong>cetățean</strong></p>
+            <p>Rol: Dintre rolurile menționate anterior, cetățeanul le îndeplinește pe cele de la punctele 1, 2, 3, 4,
+                7, 8, 10, 12.</p>
+            <p>Actor: <strong>persoană autorizată</strong></p>
+            <p>Rol: Persoana autorizată are acces la toate funcționalitățile produsului.</p>
+            <p>În continuare este prezentată diagrama use case a proiectului, care ilustrează fiecare actor și rolurile pe care le îndeplinește.</p>
+            <figure typeof="sa:image"><img src="usecase-gamon.png" alt="Use case diagram">
+                <figcaption>Fig.1 - Diagramă use case</figcaption>
+            </figure>
+
+    
+            <h3>Mediu de operare</h3>
+            <p>Aplicația va funcționa pe browserele Google Chrome, Mozilla Firefox, Opera și va fi independentă de
+                sistemele de operare.
+                Partea de back-end va fi implementată în Node.js.</p>
+            <h3>Documentația utilizatorului</h3>
+            <p>Se va crea manualul de utilizare la finalul implementării aplicației.</p>
+            <h3>Librării</h3>
+            <ul>
+                <li>pentru grafice se va utiliza chart.js</li>
+                <li>pentru exportarea PDF-urilor se va utiliza jsPDF</li>
+            </ul>
+        </section>
+            <section>
+                <h2 id="caracteristici">Caracteristicile aplicației</h2>
+                <ol>
+                    <li>
+                        <h3>Crearea unui cont și autentificarea</h3>
+                        <p>De pe pagina principală, utilizatorul apasă butonul Login/Sign up și este redirecționat către
+                            o pagină corespunzătoare.
+                            Acesta își creează un cont (pagina Sign up): își introduce detaliile personale
+                            (nume, prenume, adresă de email), alege o parolă și selectează un tip de cont (cetățean sau
+                            persoană autorizată).
+                            În cazul în care selectează persoană autorizată, este necesar să introducă și codul
+                            organizației de care aparține.</p>
+                        <p>În eventualitatea în care utilizatorul are deja un cont, se autenifică (pagina Login)
+                            folosind doar adresa de email și parola. </p>
+                        <p>Intrarea propriu-zisă în aplicație se face cu ajutorul butonului Submit, după completarea
+                            datelor.</p>
+                    </li>
+                    <li>
+                        <h3>Contul meu - vizualizarea și editarea detaliilor personale</h3>
+                        <p>Utilizatorul își poate vedea statisticile personale (numărul de raportări și numărul de evenimente la care a participat drept voluntar)
+                            și nivelul curent calculat pe baza statisticilor. Pentru fiecare raportare și pentru fiecare participare la o activitate de curățare,
+                            acesta primește un anumit număr de puncte prin care își crește nivelul.
+                        </p>
+                        <p>De asemenea, poate edita detaliile contului (nume, prenume, poză de profil, parolă).</p>
+                    </li>
+                    <li>
+                        <h3>Pins - localizarea pe hartă a zonelor în care există deșeuri</h3>
+                        <p>După autentificare, utilizatorului îi apare pagina de dashboard, unde există o hartă cu zonele în care 
+                            au fost raportate anterior deșeuri, marcate cu ajutorul unor pin-uri.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Vizualizarea statisticilor </h3>
+                        <p> În dashboard se pot vizualiza, de asemenea, și statisticile referitoare la numărul total de raportări, numărul total de zone curățate,
+                            un grafic cu numărul de raportări în funcție de tipurile de deșeuri și încă unul cu cantitatea de gunoi raportată pe unitate de timp
+                            (zi, săptămână, lună).
+                        </p>
+                    </li>
+                   
+                    <li>
+                        <h3>Vizualizarea și modificarea listei de raportări</h3>
+                        <p>Personalul autorizat are acces la o listă cu toate înregistrările deșeurilor de pe hartă, care conține informații despre 
+                            statusul, dimensiunea, locația deșeurilor și un buton pentru detalii.
+                        </p>
+                        <p>Apăsarea butonului Details va deschide o pagină cu toate informațiile de mai sus, și în plus o imagine cu deșeurile, tipul de gunoi 
+                            și un câmp cu informații adiționale.
+                        </p>
+                        <p>Persoana autorizată poate bifa căsuța din dreptul unui item al listei pentru a avea acces la opțiunile Delete și Mark as cleaned,
+                            în funcție de statusul deșeurilor (au fost raportate incorect/curățate).
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3>Exportarea statisticilor</h3>
+                        <p>La finalul listei de deșeuri, care apare doar în cazul personalului autorizat, există și un buton de exportare a statisticilor
+                            prevăzute în dashboard. Acestea pot fi descărcate în diverse formate - CSV, HTML, PDF.
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3>Raportarea deșeurilor pe baza unor filtre</h3>
+                        <p>Apăsând butonul Report dump, orice utilizator poate accesa pagina de raportare a deșeurilor. Informațiile necesare completării
+                            sunt următoarele: tipurile deșeurilor, dimensiunea, locația pe hartă, informații adiționale și o imagine cu deșeurile. Tot aici 
+                            există posibilitatea de a comanda un container la domiciliu, pentru deșeurile personale.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Vizualizarea centrelor de colectare selectivă</h3>
+                        <p> Orice utilizator are acces la o listă și la o hartă unde se pot găsi toate centrele de colectare selectivă din zona respectivă.
+                            Accesarea butonului listei va afișa informații despre numele centrului, dimensiunea (clădire sau container), locația și un 
+                            buton pentru detalii.
+                        </p>
+                        <p> Butonul Details afișează informațiile de mai sus, și în plus detaliile de contact ale centrului (dacă există), orele de lucru și
+                            tipul deșeurilor colectate.
+                        </p>
+                        
+                    </li>
+                    <li>
+                        <h3>Adăugarea centrelor de colectare selectivă</h3>
+                        <p> Personalul autorizat are în plus opțiunea de adăugare a unui centru de colectare.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Vizualizarea evenimentelor</h3>
+                        <p> Orice uitilizator are acces la o listă cu titlurile evenimentelor. Apăsarea pe un titlu deschide o pagină cu detaliile corespunzătoare - 
+                            o scurtă descriere a evenimentului, data la care va avea loc, organizatorul, numărul de participanți înscriși, cantitatea de gunoi 
+                            de curățat, locația evenimentului și butonul Attend.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Crearea evenimentelor</h3>
+                        <p> Suplimentar față de detaliile prezentate mai sus, personalul autorizat are butonul Create event, care îi permite să înregistreze 
+                            următorul eveniment de acest tip.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Deconectarea de la aplicație </h3>
+                        <p> Butonul Sign out redirecționează utilizatorul către pagina principală.
+                        </p>
+                    </li>
+                    
+                </ol>
+            </section>
+            <section>
+                <h2 id="cerinte-nefunctionale">Alte cerințe nefuncționale</h2>
+                <h3>Cerințe privind securitatea</h3>
+                <p>Utilizatorul se va conecta la contul personal cu ajutorul parolei alese. În plus, în cazul în care face parte din personalul autorizat,
+                    la crearea contului va fi necesară introducerea unui cod generat de către organizația de care aparține.
+                </p>
+            </section>
+            <section>
+                <h2 id="resurse">Resurse</h2>
+                <ul>
+                    <li><a href="https://profs.info.uaic.ro/~andrei.panu/webprojects.html">https://profs.info.uaic.ro/~andrei.panu/webprojects.html</a></li>
+                    <li><a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-projects.html">https://profs.info.uaic.ro/~busaco/teach/courses/web/web-projects.html</a></li>
+                    <li><a href="https://admin.trashout.ngo/signin/">https://admin.trashout.ngo/signin/</a></li>
+                    <li><a href="https://www.rosal.ro/#colectare-selectiva">https://www.rosal.ro/#colectare-selectiva</a></li>
+                    <li><a href="https://salubris.ro/">https://salubris.ro/</a></li>
+                </ul>
+            </section>
+            <footer class="design-footer">Aprilie, 2022</footer>
+    </article>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Public requests</title>
+
+    <script src="https://use.fontawesome.com/42c197b2be.js"></script>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/dump-list-public-requests.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+
+<body>
+    <nav class="zone sticky">
+        <div class="top-nav">
+            <a class="style-logo" href="#">GaMon</a>
+            <div class="push">
+                <a href="report-dump.html"><i class="fa fa-map-marker" aria-hidden="true"></i>
+
+                    Report dump</a>
+                <a href="#" class="profile">
+                    <div class="picture">
+                        <img src="images/cat.jpg">
+                    </div>
+                    <div id="displayed-name" class="name">Name</div>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+    <div class="main-container">
+        <div id="left-nav">
+
+            <div class="sidebar">
+
+                <a href="dashboard.html"><i class="fa fa-eye" aria-hidden="true"></i>Dashboard</a>
+                <a id="private-button" class="selected" href="dump-list-private-requests.html"><i class="fa fa-list-ul"
+                        aria-hidden="true"></i>Dump list</a>
+                <a href="collection-points-list.html"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Collection
+                    points</a>
+                <a href="events-list.html"><i class="fa fa-calendar" aria-hidden="true"></i>
+                    Events</a>
+                <a class="place-bottom" href="login.html"><i class="fa fa-sign-out" aria-hidden="true"></i>
+                    Sign out</a>
+            </div>
+        </div>
+
+        <div id="centered" class="center-container">
+            <div class="list-buttons">
+                <button id="update-button" type="button"><i class="fa-solid fa-circle-check"></i>
+
+                    Mark as cleaned</button>
+                <button id="delete-button" type="button">Delete record</button>
+            </div>
+            <div class="request-type">
+                <div class="personal-requests">
+                    <a href="dump-list-private-requests.html">Private requests</a>
+                </div>
+                <div class="public-requests">
+                    <a href="dump-list-public-requests.html">Public requests</a>
+                </div>
+            </div>
+            <table id="dump-list-table">
+
+                <tr>
+                    <th>Check</th>
+                    <th>ID</th>
+                    <th>Date</th>
+                    <th>Size</th>
+                    <th>Location</th>
+                    <th>Request type</th>
+                    <th>Show details</th>
+                </tr>
+
+            </table>
+
+            <div class="export-button">
+                <div>
+                    <button class="button" onclick="openPopup()">Export</button>
+
+                    <div class="popup" id="popup">
+                        <div class="statistics-type">
+                            <p class="popup-text">Type of statistics:</p>
+                            <div class="big-type-of-statistics">
+                                <div class="type-of-statistics">
+                                    <p class="small-popup-text">Time:</p>
+                                    <select name="time-chart">
+                                        <option value="day">Today</option>
+                                        <option value="week">This week</option>
+                                        <option value="month">This month</option>
+                                    </select>
+                                </div>
+
+                                <div class="type-of-statistics">
+                                    <p class="small-popup-text">Type:</p>
+                                    <select name="type-chart">
+                                        <option value="paper">Paper</option>
+                                        <option value="glass">Glass</option>
+                                        <option value="metal">Metal</option>
+                                        <option value="plastic">Plastic</option>
+                                        <option value="cardboard">Cardboard</option>
+                                        <option value="biodegradable">Biodegradable</option>
+                                        <option value="biodegradable">Others</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <p class="popup-text">Format:</p>
+                            <div class="format">
+                                <select name="format-chart">
+                                    <option value="HTML">HTML</option>
+                                    <option value="CSV">CSV</option>
+                                    <option value="PDF">PDF</option>
+                                </select>
+                            </div>
+                            <button class="popup-button">Download</button>
+                            <button class="popup-button" onclick="closePopup()" id="cancel">Cancel</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="javascript/popup-form.js"></script>    
+    <script src="javascript/bundle1.js"></script>
+    <script src="javascript/bundle2.js"></script>
+</body>
+
+</html>

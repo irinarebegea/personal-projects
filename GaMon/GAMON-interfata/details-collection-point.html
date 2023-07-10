@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Details-collection points</title>
+
+    <script src="https://use.fontawesome.com/42c197b2be.js"></script>
+    <script src="https://kit.fontawesome.com/539a88a107.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/details-collection-center-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+
+<body>
+    <nav class="zone sticky">
+        <div class="top-nav">
+            <a class="style-logo" href="#">GaMon</a>
+            <div class="push">
+                <a href="report-dump.html"><i class="fa fa-map-marker" aria-hidden="true"></i>
+
+                    Report dump</a>
+                <a href="#" class="profile">
+                    <div class="picture">
+                        <img src="images/cat.jpg" alt="Profile picture">
+                    </div>
+                    <div id="displayed-name" class="name"></div>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+    <div class="main-container">
+        <div id="left-nav">
+
+            <div class="sidebar">
+
+                <a href="dashboard.html"><i class="fa fa-eye" aria-hidden="true"></i>Dashboard</a>
+                <a id="private-button" href="dump-list-private-requests.html"><i class="fa fa-list-ul" aria-hidden="true"></i>Dump list</a>
+                <a href="collection-points-list.html"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Collection
+                    points</a>
+                <a href="events-list.html"><i class="fa fa-calendar" aria-hidden="true"></i>
+                    Events</a>
+                <a class="place-bottom" href="login.html"><i class="fa fa-sign-out" aria-hidden="true"></i>
+                    Sign out</a>
+            </div>
+        </div>
+
+        <div id="centered" class="center-container">
+            <div id="point-name" class="center-name">
+                <!-- <h1 id="name">Centrul de colectare si reciclare, Iasi</h1> -->
+            </div>
+            <div class="main-info">
+                <div class="left-column">
+                    <div class="first-row">
+                        <div class="contact">
+                            <h2 class="titles">Contact</h2>
+                            <div id="point-email" class="contact-small">
+                                <i class="fa-solid fa-envelope icon"></i>
+                            </div>
+
+                            <div id="point-phone" class="contact-small">
+                                <i class="fa-solid fa-phone icon"></i>
+                            </div>
+
+                        </div>
+                        <div id="point-size" class="size">
+                            <h2 class="titles">Size</h2>
+                            <i class="fa-solid fa-building icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="timetable">
+                        <h2 class="titles">Timetable</h2>
+                        <table>
+
+                            <tr>
+                                <th>Day</th>
+                                <th>Start</th>
+                                <th>End</th>
+                            </tr>
+
+                            <tr id="mon">
+                                <td>Mon</td>
+                                <!-- <td>08:00</td>
+                                <td>20:00</td> -->
+                            </tr>
+
+                            <tr id="tue">
+                                <td>Tue</td>
+                                <!-- <td>08:00</td>
+                                <td>20:00</td> -->
+                            </tr>
+
+                            <tr id="wed">
+                                <td>Wed</td>
+                                <!-- <td>08:00</td>
+                                <td>20:00</td> -->
+                            </tr>
+
+                            <tr id="thu">
+                                <td>Thu</td>
+                                <!-- <td>08:00</td>
+                                <td>20:00</td> -->
+                            </tr>
+
+                            <tr id="fri">
+                                <td>Fri</td>
+                                <!-- <td>08:00</td>
+                                <td>20:00</td> -->
+                            </tr>
+
+                            <tr id="sat">
+                                <td>Sat</td>
+                                <!-- <td>08:00</td>
+                                <td>20:00</td> -->
+                            </tr>
+
+                            <tr id="sun">
+                                <td>Sun</td>
+                                <!-- <td>08:00</td>
+                                <td>20:00</td> -->
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="right-column">
+                    <div id="point-location" class="address">
+                        <h2 class="titles address-box">Address</h2>
+                        <i class="fa-solid fa-map-pin icon"></i>
+                    </div>
+                    <div class="type">
+                        <h2 class="titles type-box">Type of waste you can dispose here</h2>
+                        <div class="three-boxes">
+                            <div id="recyclable" class="recycle">
+                                <h4 class="big-text">Recyclables</h4>
+                                <!-- <p class="text">Paper</p>
+                        <p class="text">Glass</p>
+                        <p class="text">Metal</p>
+                        <p class="text">Plastic</p>
+                        <p class="text">Cardboard</p>
+                        <p class="text">Biodegradable</p> -->
+                            </div>
+                            <div id="household" class="household">
+                                <h4 class="big-text">Household</h4>
+                                <!-- <p class="text">Electronic</p>
+                        <p class="text">Furniture</p>
+                        <p class="text">Carpets</p>
+                        <p class="text">Mirror</p> -->
+                            </div>
+                            <div id="other" class="other">
+                                <h4 class="big-text">Other</h4>
+                                <!-- <p class="text">Clothes</p>
+                        <p class="text">Tires</p>
+                        <p class="text">Wooden</p>
+                        <p class="text">Construction materials</p> -->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="javascript/collectionPointsDetailsSinglePoint.js"></script>
+</body>
+
+</html>

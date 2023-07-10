@@ -1,0 +1,172 @@
+body {
+    background-color: #E8E9EB;
+    font-family: Poppins, sans-serif;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 3% 0;
+    border: 1px solid #E8E9EB;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#submit-button {
+    color: white;
+}
+
+
+button {
+    font-family: Poppins, sans-serif;
+    cursor: pointer;
+    width: 50%;
+    text-transform: uppercase;
+}
+
+.loginbtn,
+.signupbtn {
+    background-color: #E8E9EB;
+    color: #01110A;
+    padding: 2% 1%;
+    margin: auto;
+    border-style: solid;
+    border-color: #E8E9EB;
+
+}
+
+.loginbtn:hover,
+.signupbtn:hover {
+    color: #01110A;
+    border-style: solid;
+    border-color: #E8E9EB;
+    border-bottom-color: #7AE582;
+
+}
+
+
+
+.loginbtn {
+    border-style: solid;
+    border-color: #E8E9EB;
+    border-bottom-color: #7AE582;
+}
+
+.submitbtn {
+    background-color: #7AE582;
+    padding: 2% 0;
+    border-style: solid;
+    border-width: medium;
+    border-color: #7AE582;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.submitbtn a {
+    color: #ffffff;
+}
+
+
+/* Everything on the page - container, choose-login, info */
+.main-container {
+    padding: 0 1% 2% 1%;
+    margin: 7% 35% 10% 35%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+
+/* Username input, password input, select button */
+.container {
+    background-color: #E8E9EB;
+    padding: 0 1% 0 1%;
+    margin: 3% 5%;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+
+}
+
+/* Choose login, container */
+.info {
+    background-color: #E8E9EB;
+    padding: 0% 2% 0% 2%;
+    margin: 2% 2%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    border-style: solid;
+    border-width: medium;
+    border-color: #E8E9EB;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+    border-radius: 3%;
+}
+
+
+/* Login button, sign up button */
+.choose-login {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex: 1;
+    margin: 0 1%;
+
+}
+
+a {
+    text-decoration: none;
+    color: #01110A;
+}
+
+label {
+    font-weight: bold;
+}
+
+
+/* Small screens */
+
+@media only screen and (max-width: 880px) {
+
+    .main-container {
+        font-size: 0.7em;
+        margin: 10% 20%;
+    }
+
+}
+
+
+@media only screen and (max-width: 428px) {
+    .main-container {
+        margin: 5% 10%;
+    }
+}
+
+ 
+@media only screen and (max-width: 300px) {
+
+
+    .loginbtn, .signupbtn, .submitbtn {
+        font-size: 0.8em;
+    }
+
+    .main-container {
+        font-size: 0.6em;
+    }
+
+    input[type=text],
+    input[type=password],
+    input[type=email] {
+        padding: 5px 20px;
+        font-size: 0.7em;
+    }
+
+
+ }

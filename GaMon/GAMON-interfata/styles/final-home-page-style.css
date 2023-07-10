@@ -1,0 +1,308 @@
+body {
+    margin: auto 0;
+    font-family: Poppins, sans-serif;
+    background-color: white;
+}
+
+
+/* Top navigation */
+.top-nav {
+    margin: 0;
+    overflow: hidden;
+    background-color: #7AE582;
+    width: 100%;
+}
+
+.top-nav a {
+    font-size: 1.3em;
+    float: left;
+    text-decoration: none;
+    padding: 7px 20px;
+    color: #fafafa;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.top-nav .style-logo {
+    padding: 3px 0 0 2%;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    font-weight: bold;
+}
+
+.sticky {
+    top: 0;
+    width: 100%;
+}
+
+.push {
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    padding-right: 2%;
+}
+
+.push a:hover {
+    background-color: rgb(87, 190, 94);
+}
+
+/* Profile image */
+
+
+.login-signup {
+    margin-top: auto;
+}
+
+
+
+/*-------------------------------------------------------------*/
+
+.gamon {
+    height: 35%;
+    width: 100%;
+}
+
+.about {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about img {
+    height: auto;
+    width: 50%;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-text h1 {
+    margin-bottom: 0;
+    color: #01110A;
+    text-align: center;
+    font-size: 300%;
+}
+
+#h1 {
+    margin: 0;
+}
+
+.about-text h6 {
+    color: #01110A;
+    text-align: center;
+    font-size: 100%;
+}
+
+.about-text p {
+    margin-left: 30px;
+    color: #01110A;
+    text-align: center;
+}
+
+.why {
+    width: 100%;
+    height: 20%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.main h1 {
+    margin-bottom: 0;
+    color: #7AE582;
+    font-size: 250%;
+}
+
+.main p {
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #01110A;
+}
+
+.how {
+    margin-top: 70px;
+    width: 100%;
+    height: 35%;
+}
+
+.how-main {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.how-main h1 {
+    margin-bottom: 0;
+    color: #7AE582;
+    font-size: 250%;
+}
+
+.how-main p {
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #01110A;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.cards {
+    height: 340px;
+    width: 300px;
+    padding: 20px 35px;
+    border-radius: 20px;
+    margin: 30px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border-style: solid;
+    border-width: medium;
+    border-color: #E8E9EB;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+}
+
+#card2 {
+    background-color: #dcffe4;
+}
+
+#card3 {
+    background-color: #abffb3;
+}
+
+#card4 {
+    background-color: #7AE582;
+}
+
+.cards h4 {
+    color: #7AE582;
+    font-size: 120%;
+}
+
+.cards p {
+    color: grey;
+    line-height: 30px;
+}
+
+.cards .text-cards3-4 {
+    color: #01110A;
+}
+
+.cards i {
+    font-size: 50px;
+    margin: 25px 0px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 10px #7AE582 solid;
+    border-top: 1px #E8E9EB solid;
+
+}
+
+footer p:nth-child(1) {
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+/* Small screens */
+
+
+@media only screen and (max-width: 1170px) {
+
+
+    .top-nav {
+        font-size: 0.7em;
+    }
+
+    .about h1,
+    .why h1,
+    .how h1 {
+        font-size: 1.7em;
+    }
+
+}
+
+@media only screen and (max-width: 880px) {
+
+
+    .top-nav {
+        font-size: 0.5em;
+        padding-top: 1px;
+    }
+
+
+    .top-nav .style-logo {
+        padding-top: 3px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .box {
+        flex-direction: column;
+    }
+
+    .main p,
+    .how-main p,
+    .cards p {
+        font-size: 1em;
+    }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+    .cards {
+        height: 240px;
+        width: 200px;
+    }
+
+    .cards p {
+        display: none;
+    }
+
+    footer p {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    .top-nav {
+        font-size: 0.3em;
+    }
+
+    .cards {
+        height: 140px;
+        width: 200px;
+        margin: 10px;
+        padding-top: 0px;
+     
+    }
+
+    .cards i,
+    .cards h4 {
+        font-size: 1em;
+    }
+
+}

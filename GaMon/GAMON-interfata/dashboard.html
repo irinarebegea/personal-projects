@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+
+    <script src="https://use.fontawesome.com/42c197b2be.js"></script>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/dashboard-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+
+<body>
+    <nav class="zone sticky">
+        <div class="top-nav">
+            <a class="style-logo" href="#">GaMon</a>
+            <div class="push">
+                <a href="report-dump.html"><i class="fa fa-map-marker" aria-hidden="true"></i>
+
+                    Report dump</a>
+                <a href="#" class="profile">
+                    <div class="picture">
+                        <img src="images/cat.jpg" alt="Profile picture">
+                    </div>
+                    <div id="displayed-name" class="name"></div>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+    <div class="main-container">
+        <div id="left-nav">
+
+            <div class="sidebar">
+
+                <a class="selected" href="dashboard.html"><i class="fa fa-eye" aria-hidden="true"></i>Dashboard</a>
+                <a id="private-button" href="dump-list-private-requests.html"><i class="fa fa-list-ul"
+                        aria-hidden="true"></i>Dump list</a>
+                <a href="collection-points-list.html"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Collection
+                    points</a>
+                <a href="events-list.html"><i class="fa fa-calendar" aria-hidden="true"></i>
+                    Events</a>
+                <a class="place-bottom" href="login.html"><i class="fa fa-sign-out" aria-hidden="true"></i>
+                    Sign out</a>
+            </div>
+        </div>
+
+        <div id="centered" class="center-container">
+            <div class="stats-container">
+
+                <div class="stats-numbers">
+                    <div class="small-box">
+                        <div class="flexx">
+                            <p class="big-size"><i class="fa fa-trash" aria-hidden="true"></i></p>
+                            <p id="total-nr" class="big-size">46</p>
+                        </div>
+                        <p class="hide-when-small">Total number of reports</p>
+                    </div>
+
+                    <div class="small-box">
+                        <div class="flexx">
+                            <p class="big-size"><i class="fa fa-recycle" aria-hidden="true"></i> </p>
+                            <p id="solved-nr" class="big-size">23</p>
+                        </div>  
+                        <p class="hide-when-small">Solved reports</p>
+                    </div>
+                </div>
+                <div class="medium-box">
+                    <div class="img-wrap">
+                        <img src="images/bar-chart.png" alt="Statistics">
+                        <p class="img-description">Volume of reported dumps</p>
+                        <select name="time-chart" class="img-description">
+                            <option value="day">Today</option>
+                            <option value="week">This week</option>
+                            <option value="month">This month</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="medium-box">
+                    <div class="img-wrap">
+                        <img src="images/meta-chart.png" alt="Statistics">
+                        <p class="img-description">Number of reports for each category</p>
+                        <select name="type-chart" class="img-description">
+                            <option value="paper">Paper</option>
+                            <option value="glass">Glass</option>
+                            <option value="metal">Metal</option>
+                            <option value="plastic">Plastic</option>
+                            <option value="cardboard">Cardboard</option>
+                            <option value="biodegradable">Biodegradable</option>
+                            <option value="biodegradable">Others</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div id="googleMap"></div>
+
+        </div>
+
+
+    </div>
+
+    <script src="javascript/google-map-dashboard.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQQPvj9ulp-FxgH1uKTyAb3YtrBhjVoGA&callback=myMap"></script>
+    <script src="javascript/dashboardController.js"></script>
+
+</body>
+
+</html>

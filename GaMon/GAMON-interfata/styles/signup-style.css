@@ -1,0 +1,232 @@
+body {
+    background-color: #E8E9EB;
+    font-family: Poppins, sans-serif;
+}
+
+
+input[type=text],
+input[type=password],
+input[type=email] {
+    padding: 12px 20px;
+    margin: 3% 0;
+    border: 1px solid #E8E9EB;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+
+.names {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+
+}
+
+.firstnames {
+    width: 50%;
+    padding: 0;
+}
+
+.lastnames {
+
+    width: 50%;
+    padding: 0;
+}
+
+
+button {
+    font-family: Poppins, sans-serif;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.loginbtn,
+.signupbtn {
+    background-color: #E8E9EB;
+    color: #01110A;
+    padding: 2% 1%;
+    margin: auto;
+    border-style: solid;
+    border-color: #E8E9EB;
+
+}
+
+.submitbtn a {
+    color: #ffffff;
+}
+
+.loginbtn:hover,
+.signupbtn:hover {
+    color: #01110A;
+    border-style: solid;
+    border-color: #E8E9EB;
+    border-bottom-color: #7AE582;
+
+}
+
+
+
+.signupbtn {
+    border-style: solid;
+    border-color: #E8E9EB;
+    border-bottom-color: #7AE582;
+}
+
+.submitbtn {
+    background-color: #7AE582;
+    color: #ffffff;
+    padding: 2% 0;
+    border-style: solid;
+    border-width: medium;
+    border-color: #7AE582;
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+/* Everything on the page - container, choose-login, info */
+.main-container {
+    padding: 0 1% 2% 1%;
+    margin: 7% 35% 10% 35%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+
+
+/* Username input, password input, select button */
+.container {
+    background-color: #E8E9EB;
+    padding: 0 1% 0 1%;
+    margin: 3% 5%;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+
+}
+
+/* Choose login, container */
+.info {
+    background-color: #E8E9EB;
+    padding: 0% 2% 0% 2%;
+    margin: 2% 2%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    border-style: solid;
+    border-width: medium;
+    border-color: #E8E9EB;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+    border-radius: 3%;
+}
+
+
+/* Login button, sign up button */
+.choose-login {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex: 1;
+    margin: 0 1%;
+
+}
+
+a {
+    text-decoration: none;
+    color: #01110A;
+}
+
+label {
+    font-weight: bold;
+}
+
+.acctypes {
+    display: flex;
+    flex-direction: row;
+}
+
+.type-citizen {
+    width: 50%;
+    font-weight: normal;
+    padding: 2%;
+}
+
+.type-authorized {
+    width: 50%;
+    font-weight: normal;
+    padding: 2%;
+
+}
+
+/* Small screens */
+
+
+@media only screen and (max-width: 1300px) {
+    .names {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+
+
+    .firstnames,
+    .lastnames {
+        width: 100%;
+        height: 50%;
+    }
+
+    input[type=text],
+    input[type=password],
+    input[type=email] {
+        width: 100%;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 880px) {
+
+    .main-container {
+        font-size: 0.7em;
+        margin: 10% 20%;
+    }
+
+}
+
+
+@media only screen and (max-width: 428px) {
+    .main-container {
+        margin: 5% 10%;
+    }
+}
+
+ 
+@media only screen and (max-width: 300px) {
+
+
+    .loginbtn, .signupbtn, .submitbtn {
+        font-size: 0.8em;
+    }
+
+    .main-container {
+        font-size: 0.6em;
+    }
+
+    input[type=text],
+    input[type=password],
+    input[type=email] {
+        padding: 5px 20px;
+        font-size: 0.7em;
+    }
+
+
+ }

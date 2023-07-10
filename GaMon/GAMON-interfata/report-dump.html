@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Report dump</title>
+
+    <script src="https://use.fontawesome.com/42c197b2be.js"></script>
+    <script src="https://kit.fontawesome.com/539a88a107.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/report-dump-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+
+<body>
+    <nav class="zone sticky">
+        <div class="top-nav">
+            <a class="style-logo" href="#">GaMon</a>
+            <div class="push">
+                <a href="report-dump.html"><i class="fa fa-map-marker" aria-hidden="true"></i>
+
+                    Report dump</a>
+                <a href="#" class="profile">
+                    <div class="picture">
+                        <img src="images/cat.jpg" alt="Profile picture">
+                    </div>
+                    <div id="displayed-name" class="name"></div>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+    <div class="main-container">
+        <div id="left-nav">
+
+            <div class="sidebar">
+
+                <a href="dashboard.html"><i class="fa fa-eye" aria-hidden="true"></i>Dashboard</a>
+                <a id="private-button" href="dump-list-private-requests.html"><i class="fa fa-list-ul" aria-hidden="true"></i>Dump list</a>
+                <a href="collection-points-list.html"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Collection
+                    points</a>
+                <a href="events-list.html"><i class="fa fa-calendar" aria-hidden="true"></i>
+                    Events</a>
+                <a class="place-bottom" href="login.html"><i class="fa fa-sign-out" aria-hidden="true"></i>
+                    Sign out</a>
+            </div>
+        </div>
+
+        <div id="centered" class="center-container">
+            <div class="type">
+
+                <h2 class="box-text">Garbage Type</h2>
+                <div class="divide">
+                    <div id="recyclable" class="recycle">
+                        <h5 id="recyclable-title" class="titles">Recyclables</h5>
+                        <label class="type-recycle"><input type="checkbox" name="checkbox" />Paper</label>
+                        <label class="type-recycle"><input type="checkbox" name="checkbox" />Glass</label>
+                        <label class="type-recycle"><input type="checkbox" name="checkbox" />Metal</label>
+                        <label class="type-recycle"><input type="checkbox" name="checkbox" />Plastic</label>
+                        <label class="type-recycle"><input type="checkbox" name="checkbox" />Cardboard</label>
+                        <label class="type-recycle"><input type="checkbox" name="checkbox" />Biodegradable</label>
+                    </div>
+
+
+                    <div id="household" class="household">
+                        <h5 id="household-title" class="titles">Household</h5>
+                        <label class="type-recycle"><input type="checkbox" name="checkbox" />Electronic</label>
+                        <label class="type-recycle"><input type="checkbox" name="checkbox" />Furniture</label>
+                        <label class="type-recycle"><input type="checkbox" name="checkbox" />Carpets</label>
+                        <label class="type-recycle"><input type="checkbox" name="checkbox" />Mirror</label>
+                        <!-- <input class="types" type="text" placeholder="Others" autocomplete="off" name="uname"> -->
+                    </div>
+                    <div id="other" class="other">
+                        <h5 id="other-title" class="titles">Other</h5>
+                        <label class="type-recycle"><input type="checkbox" name="checkbox" />Clothes</label>
+                        <label class="type-recycle"><input type="checkbox" name="checkbox" />Tires</label>
+                        <label class="type-recycle"><input type="checkbox" name="checkbox" />Wooden</label>
+                        <label class="type-recycle"><input type="checkbox" name="checkbox" />Construction materials</label>
+                        <!-- <input class="types" type="text" placeholder="Others" autocomplete="off" name="uname"> -->
+                    </div>
+                </div>
+            </div>
+            <div class="size">
+                <h2 class="box-text">Size</h2>
+                <div class="sizetypes">
+                    <label class="type-bin"><input type="radio" name="radio" />Car needed</label>
+                    <label class="type-center"><input type="radio" name="radio" />Fits in a bag</label>
+                    <label class="type-center"><input type="radio" name="radio" />Fits in a wheelbarrow</label>
+                </div>
+                <div class="info-and-location">
+                    <div class="location">
+                        <h2 class="box-text for-input">Location</h2>
+                        <input id="location" type="text" placeholder="Here you can add the location" autocomplete="off"
+                            name="uname">
+                    </div>
+                    <div class="request-type">
+                        <h2 class="box-text">Request</h2>
+                        <div class="requesttypes">
+                            <label class="type-private"><input type="radio" name="radio1" />Private</label>
+                            <label class="type-public"><input type="radio" name="radio1" />Public</label>
+                        </div>
+                    </div>
+                    <!-- <div class="additional-info">
+                        <h2 class="box-text for-input">Additional Information</h2>
+                        <input type="text" placeholder="Here you can add more infos about your report"
+                            autocomplete="off" name="uname">
+                    </div> -->
+                </div>
+            </div>
+            <div class="choose-images">
+                <h2 class="box-text">Add Images</h2>
+                <div class="select-file">
+                    <h6>Select files</h6>
+                </div>
+            </div>
+            <div class="report-button">
+                <div>
+                    <button id="report-button" class="button">Report</button>
+                </div>
+            </div>
+
+            <script src="javascript/reportGarbageController.js"></script>
+            <script src="javascript/test.js"></script>
+</body>
+
+</html>

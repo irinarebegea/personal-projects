@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My account</title>
+
+    <script src="https://use.fontawesome.com/42c197b2be.js"></script>
+    <script src="https://kit.fontawesome.com/539a88a107.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/my-account-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+
+<body>
+    <nav class="zone sticky">
+        <div class="top-nav">
+            <a class="style-logo" href="#">GaMon</a>
+            <div class="push">
+                <a href="report-dump.html"><i class="fa fa-map-marker" aria-hidden="true"></i>
+
+                    Report dump</a>
+                <a href="my-account.html" class="profile">
+                    <div class="picture">
+                        <img src="images/cat.jpg" alt="Profile picture">
+                    </div>
+                    <div class="name">Name</div>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+    <div class="main-container">
+        <div id="left-nav">
+
+            <div class="sidebar">
+
+                <a href="dashboard.html"><i class="fa fa-eye" aria-hidden="true"></i>Dashboard</a>
+                <a href="dump-list-private-requests.html"><i class="fa fa-list-ul" aria-hidden="true"></i>Dump list</a>
+                <a href="collection-points-list.html"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Collection points</a>
+                <a href="events-list.html"><i class="fa fa-calendar" aria-hidden="true"></i>
+                    Events</a>
+                <a class="place-bottom" href="login.html"><i class="fa fa-sign-out" aria-hidden="true"></i>
+                    Sign out</a>
+            </div>
+        </div>
+
+        <div id="centered" class="center-container">
+            <div id="name-bar" class="name-bar">
+                <!-- <h1 class="user-name">Artene Raluca</h1> -->
+            </div>
+            <div class="infos">
+                <div class="image-and-level">
+                    <div class="profile-image">
+                        <img id="img" src="images/user.jpg">
+                    </div>
+                    <div id="no-level" class="level">
+                        <h2 id="level">Level <!-- <span class="number-level">0</span>--> </h2>
+                        <p>You have <span class="points">0</span> points. Get <span class="points">11</span> more to
+                            reach next level. Report and update dumps or attend cleaning events.</p>
+                    </div>
+                </div>
+                <div class="personal-infos">
+                    <div id="email" class="contacts">
+                        <h2 id="contacts">Contacts</h2>
+                        <i class="fa-solid fa-envelope"></i>
+                        <!-- <span id="adress">emailaddress@yahoo.com</span> -->
+                    </div>
+
+                    <div class="statistics">
+                        <h3 id="statistics">Statistics about your activities:</h3>
+                    </div>
+                    <div class="boxes">
+                        <div id="reports" class="small-box">
+                            <!-- <p class="small-box-numbers">0</p> -->
+                            <p class="small-box-text">Your reports</p>
+                        </div>
+                        <div id="events" class="small-box">
+                            <!-- <p class="small-box-numbers">0</p> -->
+                            <p class="small-box-text">Events</p>
+                        </div>
+                    </div>
+
+                    <div class="account-type">
+                        <h2 class="account-title">Account type</h2>
+                        <p id="citizen"><i class="fa-solid fa-user"></i> <span class="account-text">Citizen</span></p>
+                        <p id="authorized"><i class="fa-solid fa-toolbox"></i> <span class="account-text">Authorized Personnel</span>
+                        </p>
+                        <p id="organisation"><i class="fa-solid fa-building-ngo"></i> <span class="account-text">Organization Name</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="edit-details">
+                    <button class="button"><a class="button-edit" href="edit-my-account.html">Edit</a></button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+<script src="javascript/myAccountController.js"></script>
+<script src="javascript/myAccountDetails.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create event</title>
+
+    <script src="https://use.fontawesome.com/42c197b2be.js"></script>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/create-event.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="zone sticky">
+        <div class="top-nav">
+            <a class="style-logo" href="#">GaMon</a>
+            <div class="push">
+                <a href="report-dump.html"><i class="fa fa-map-marker" aria-hidden="true"></i>
+
+                    Report dump</a>
+                <a href="#" class="profile">
+                    <div class="picture">
+                        <img src="images/cat.jpg">
+                    </div>
+                    <div id="displayed-name" class="name"></div>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+    <div class="main-container">
+        <div id="left-nav">
+
+            <div class="sidebar">
+
+                <a href="dashboard.html"><i class="fa fa-eye" aria-hidden="true"></i>Dashboard</a>
+                <a id="private-button" href="dump-list-private-requests.html"><i class="fa fa-list-ul" aria-hidden="true"></i>Dump list</a>
+                <a href="collection-points-list.html"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Collection
+                    points</a>
+                <a class="selected" href="events-list.html"><i class="fa fa-calendar" aria-hidden="true"></i>
+                    Events</a>
+                <a class="place-bottom" href="login.html"><i class="fa fa-sign-out" aria-hidden="true"></i>
+                    Sign out</a>
+            </div>
+        </div>
+
+        <div id="centered" class="center-container">
+            <div class="event-name-location">
+                <div class="name">
+                    <h2 class="box-text for-input">Event Name</h2>
+                    <input id="name" type="text" placeholder="Insert the name of the event..."> 
+                </div>
+                <div class="location">
+                    <h2 class="box-text for-input">Location</h2>
+                    <input id="location" type="text" placeholder="Insert the location of the event...">
+                </div>
+            </div>
+
+            <div class="event-description">
+                <h2 class="box-text">Description</h2>
+                <input id="big-input" type="text" placeholder="Insert a short description..."> 
+                <div class="details">
+                    <div class="date-and-organiser">
+                        <h2 class="box-text for-input">Date</h2>
+                        <input type="date">
+                        <h2 class="box-text for-input">Start time</h2>
+                        <input id="start" type="text" placeholder="Starting hours">
+                        <h2 class="box-text for-input">End time</h2>
+                        <input type="text" placeholder="Ending hours">
+                    </div>
+                    <div class="attends-and-volume">
+                        <h2 class="box-text for-input">Organiser</h2>
+                        <input id="organiser" type="text" placeholder="Insert organisation name..."> 
+                        <h2 class="box-text for-input">Number of attendants</h2>
+                        <input id="attendance" type="number"> 
+                        <h2 class="box-text for-input">Volume of trash</h2>
+                        <input id="volume" type="number"> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="submit">
+                <button id="create-button" type="button">Submit</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="javascript/createEventController.js"></script>
+</body>
+
+</html>

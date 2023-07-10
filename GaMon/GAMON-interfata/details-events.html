@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Details Events</title>
+
+    <script src="https://use.fontawesome.com/42c197b2be.js"></script>
+    <script src="https://kit.fontawesome.com/539a88a107.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/details-events-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+
+<body>
+    <nav class="zone sticky">
+        <div class="top-nav">
+            <a class="style-logo" href="#">GaMon</a>
+            <div class="push">
+                <a href="report-dump.html"><i class="fa fa-map-marker" aria-hidden="true"></i>
+
+                    Report dump</a>
+                <a href="#" class="profile">
+                    <div class="picture">
+                        <img src="images/cat.jpg" alt="Profile picture">
+                    </div>
+                    <div id="displayed-name" class="name"></div>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+    <div class="main-container">
+        <div id="left-nav">
+
+            <div class="sidebar">
+
+                <a href="dashboard.html"><i class="fa fa-eye" aria-hidden="true"></i>Dashboard</a>
+                <a id="private-button" href="dump-list-private-requests.html"><i class="fa fa-list-ul" aria-hidden="true"></i>Dump list</a>
+                <a href="collection-points-list.html"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Collection points</a>
+                <a href="events-list.html"><i class="fa fa-calendar" aria-hidden="true"></i>
+                    Events</a>
+                <a class="place-bottom" href="login.html"><i class="fa fa-sign-out" aria-hidden="true"></i>
+                    Sign out</a>
+            </div>
+        </div>
+
+        <div id="centered" class="center-container">
+        
+        <div id="event-name-and-description" class="description">
+            <!-- <h1 class="event-name">Event Name</h1>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+             sed do eiusmod tempor incididunt ut labore et dolore magna 
+             aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+             ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+             Duis aute irure dolor in reprehenderit in voluptate velit 
+             esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+             occaecat cupidatat non proident, sunt in culpa qui officia 
+             deserunt mollit anim id est laborum.</p> -->
+        </div>
+        <div class="general-info">
+            <div class="column-1">
+                <div class="date">
+                    <h2 class="titles">When?</h2>
+                    <table class="when-table">
+                        <tr class="when when-td">
+                            <th class="when-td"></th>
+                            <th class="when-td">Start</th>
+                            <th class="when-td">End</th>
+                        </tr>
+        
+                        <tr id="date" class="when">
+                            <td class="when-td first-col">Date</td>
+                            <!-- <td class="when when-td">12.06.2022</td>
+                            <td class="when when-td">12.06.2022</td> -->
+                        </tr>
+        
+                        <tr id="time" class="when">
+                            <td class="when-td first-col">Time</td>
+                            <!-- <td class="when-td">10 AM</td>
+                            <td class="when-td">6 PM</td> -->
+                        </tr>
+                    </table>
+                </div>
+                <div class="organiser">
+                    <h2 class="titles">Organiser</h2>
+                    <table class="organiser-table">
+                        <tr id="organiser-name">
+                            <th>Name</th>
+                            <!-- <td>Let's do it, Romania!</td> -->
+                            
+                        </tr>
+        
+                        <tr id="organiser-phone">
+                            <th>Phone</th>
+                            <!-- <td>0741761211</td> -->
+                        </tr>
+        
+                        <tr id="organiser-email">
+                            <th>Email address</th>
+                            <!-- <td>emailaddress@yahoo.com</td> -->
+                        </tr>
+                    </table>
+                </div>
+                <div class="participants-and-volume">
+                    <div id="participants-event" class="participants">
+                        <!-- <h1 class="nr-participants-volume">10</h1> -->
+                        <p class="volume-participants-text">number of participants</p>
+                    </div>
+                    <div id="volume-event" class="volume">
+                        <!-- <h1 class="nr-participants-volume">20</h1> -->
+                        <p class="volume-participants-text">volume of waste needed to be cleaned</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column-2">
+                <div class="location">
+                    <h2 class="titles">Location</h2>
+                    <div id="googleMap"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="attend-button">
+            <div>
+                <button id="attend-button" class="button">Attend</button>
+            </div>
+        </div>
+        
+        <script src="javascript/google-map-events.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQQPvj9ulp-FxgH1uKTyAb3YtrBhjVoGA&callback=myMap"></script>
+        <script src="javascript/eventDetailsSingleEvent.js"></script>
+</body>
+
+</html>
